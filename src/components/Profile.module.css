@@ -1,0 +1,15 @@
+.content {
+	grid-area: c;
+	background-color: #c8f0b8;
+}
+
+.cover {
+	min-height: 20rem;
+	background-image: url(https://www.freetheocean.com/wp-content/uploads/2019/06/free-the-ocean-hero-images_1920x1080_6-16-2019_v1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.avatar {
+	height: 10rem;
+}
