@@ -1,9 +1,9 @@
 .logo {
-	height: 3rem;
+	height: 2rem;
 	pointer-events: none;
   }
 
 .header {
-	grid-area: h;
+	grid-area: header;
 	background-color: #6c9cc9;
 }
