@@ -1,9 +1,11 @@
 .logo {
-	height: 2rem;
-	pointer-events: none;
-  }
+    height: 2rem;
+    pointer-events: none;
+}
 
 .header {
-	grid-area: header;
-	background-color: #6c9cc9;
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    justify-content: space-between;
 }

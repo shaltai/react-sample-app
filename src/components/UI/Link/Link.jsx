@@ -1,10 +1,12 @@
-import React from 'react';
-import Styles from '../UI.module.css';
+// import React from 'react';
+// import Styles from './Link.module.css';
+// import { NavLink } from 'react-router-dom';
 
-function Link(props) {
-	return (
-		<a href="#" className={UI.link}>{props.text}</a>
-	)
-}
+// function Link(props) {
+// 	debugger;
+// 	return (
+// 		<NavLink className={Styles.link}>{props.text}</NavLink>
+// 	)
+// }
 
-export default Link;
+// export default Link;

@@ -1,15 +1,46 @@
 .content {
-	grid-area: content;
-	background-color: #c8f0b8;
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
 }
 
-.cover {
-	min-height: 20rem;
-	background-image: url(https://www.freetheocean.com/wp-content/uploads/2019/06/free-the-ocean-hero-images_1920x1080_6-16-2019_v1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+.gallery_preview {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-template-areas: "avatar heading" "avatar photos";
+    grid-template-rows: 4.5rem 13rem;
+    grid-template-columns: 3fr 7fr;
+    grid-gap: 0rem;
 }
 
-.avatar {
-	height: 10rem;
+.avatarContainer {
+    grid-area: avatar;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.galleryWrapper {
+    display: flex;
+    grid-area: photos;
+    overflow: hidden;
+}
+
+.gallery__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: .5rem;
+}
+
+.gallery__photos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery__photo {
+    position: relative;
+    margin-right: 2rem;
+    overflow: hidden;
 }
