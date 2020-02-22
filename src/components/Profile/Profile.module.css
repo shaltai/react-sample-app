@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: inherit;
 }
 
 .gallery_preview {
@@ -80,4 +79,23 @@
 
 /* Posts */
 
-.posts__heading {}
+.posts {
+    width: 42rem;
+    margin-right: 2rem;
+}
+
+.posts__heading {
+    margin-bottom: 1rem;
+}
+
+.postItem__imageContainer {
+    margin-bottom: 1rem;
+}
+
+.postTitle {
+    margin-bottom: .5rem;
+}
+
+.postText {
+    margin-bottom: .5rem;
+}
