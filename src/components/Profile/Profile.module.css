@@ -5,6 +5,13 @@
     /* overflow: hidden; */
 }
 
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: inherit;
+}
+
 .gallery_preview {
     display: grid;
     justify-content: space-between;
@@ -13,6 +20,7 @@
     grid-template-rows: 4.5rem 13rem;
     grid-template-columns: 3fr 7fr;
     grid-gap: 0rem;
+    margin-bottom: 3rem;
 }
 
 .avatarContainer {
@@ -44,3 +52,32 @@
     margin-right: 2rem;
     overflow: hidden;
 }
+
+
+/* Information */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3rem;
+    /* padding-top: 3rem; */
+}
+
+.info__heading {
+    padding-bottom: 1rem;
+}
+
+.info__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info__listItem {
+    width: 33%;
+}
+
+
+/* Posts */
+
+.posts__heading {}

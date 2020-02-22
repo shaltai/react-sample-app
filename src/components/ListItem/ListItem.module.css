@@ -1,0 +1,10 @@
+.listItem {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 20rem;
+    margin-right: 2rem;
+}
+
+.listItem__term {
+    width: 33%;
+}

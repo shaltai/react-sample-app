@@ -4,6 +4,7 @@ import Avatar from '../../img/profile/photo__maf-1.jpg';
 import Photo from '../../img/profile/photo__maf-2.jpg';
 import UI from '../UI/UI.module.css';
 import { NavLink } from 'react-router-dom';
+import ListItem from '../ListItem/ListItem';
 
 function Profile() {
 	return (
@@ -29,27 +30,34 @@ function Profile() {
 
 			{/* Information */}
 			<div className={Styles.info}>
-				<h1 className={Styles.heading_1}>marc-andre fleury</h1>
-				<ul className={Styles.info__list}>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-					<li className={Styles.info__listItem}></li>
-				</ul>
-				<dl>
-					<dt>
-
-					</dt>
-					<dd>
-
-					</dd>
+				<div className={` ${Styles.info__heading} ${Styles.heading} `}>
+					<h1 className={Styles.heading_1}>marc-andre fleury</h1>
+					<NavLink to='/profile-gallery' className={` ${Styles.info__link} ${UI.link} `}>more info</NavLink>
+				</div>
+				<dl className={Styles.info__list}>
+					<ListItem className={Styles.info__listItem} term='birthday' definition='november 28, 1985' />
+					<ListItem className={Styles.info__listItem} term='current city' definition='vegas' />
+					<ListItem className={Styles.info__listItem} term='hometown' definition='sorel-tracy' />
+					<ListItem className={Styles.info__listItem} term='phone' definition='1 541 754-3010' />
+					<ListItem className={Styles.info__listItem} term='relationship' definition='married' />
+					<ListItem className={Styles.info__listItem} term='company' definition='vegas golden nights' />
+					<ListItem className={Styles.info__listItem} term='education' definition='college-français rive-sud' />
+					<ListItem className={Styles.info__listItem} term='languages' definition='francias, english' />
+					<ListItem className={Styles.info__listItem} term='friends' definition='472' />
+					<ListItem className={Styles.info__listItem} term='communities' definition='48 groups' />
+					<ListItem className={Styles.info__listItem} term='videos' definition='2 237 clips' />
+					<ListItem className={Styles.info__listItem} term='audio' definition='245 compositions' />
 				</dl>
 			</div>
+
+			{/* Posts */}
+			<div className={Styles.posts__heading}>
+				<h2 className={Styles.heading_2}>posts</h2>
+				<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>search</NavLink>
+			</div>
+
+			{/* Add post */}
+			<h2 className={Styles.AddPost}>add post</h2>
 		</div >
 	)
 }

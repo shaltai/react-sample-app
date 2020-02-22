@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
-import Messages from './components/Messages/Messages'
-import Friendlist from './components/Friendlist/Friendlist'
+import Messages from './components/Messages/Messages';
+import Friendlist from './components/Friendlist/Friendlist';
 import './App.css';
 import { Route, BrowserRouter } from 'react-router-dom';
 
