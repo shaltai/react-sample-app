@@ -79,23 +79,24 @@
 
 /* Posts */
 
-.posts {
-    width: 42rem;
-    margin-right: 2rem;
+
+/* Add post */
+
+.addPost {
+    display: flex;
+    width: calc(100% - 44rem);
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
 
-.posts__heading {
+.addPost__h2 {
+    width: 100%;
     margin-bottom: 1rem;
 }
 
-.postItem__imageContainer {
+.addPost__inputText {
+    width: 100%;
+    max-width: 27rem;
     margin-bottom: 1rem;
-}
-
-.postTitle {
-    margin-bottom: .5rem;
-}
-
-.postText {
-    margin-bottom: .5rem;
 }

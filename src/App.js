@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Messages from './components/Messages/Messages';
 import Friendlist from './components/Friendlist/Friendlist';
+import MenuGlobal from './components/MenuGlobal/MenuGlobal';
 import './App.css';
 import { Route, BrowserRouter } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
 				<Route path='/friendlist' component={Friendlist} />
 				<Route path='/messages' component={Messages} />
 				<Profile />
+				<MenuGlobal />
 			</div>
 		</BrowserRouter>
 	);

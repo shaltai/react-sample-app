@@ -5,21 +5,21 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar() {
 	return (
-		<nav className={Styles.nav}>
+		<nav className={Styles.content}>
 			<div className={Styles.item}>
-				<NavLink to='/friendlist' className={UI.link}>add to friendlist</NavLink>
+				<NavLink to='/friendlist' className={` ${UI.link} ${Styles.link} `}>add to friendlist</NavLink>
 			</div>
 			<div className={Styles.item}>
-				<NavLink to='/messages' className={UI.link}>write message</NavLink>
+				<NavLink to='/messages' className={` ${UI.link} ${Styles.link} `}>write message</NavLink>
 			</div>
 			<div className={Styles.item}>
-				<NavLink to='/#' className={UI.link}>notify about posts</NavLink>
+				<NavLink to='/#' className={` ${UI.link} ${Styles.link} `}>notify about posts</NavLink>
 			</div>
 			<div className={Styles.item}>
-				<NavLink to='/#' className={UI.link}>invite to community</NavLink>
+				<NavLink to='/#' className={` ${UI.link} ${Styles.link} `}>invite to community</NavLink>
 			</div>
 			<div className={Styles.item}>
-				<NavLink to='/#' className={UI.link}>remove from feed</NavLink>
+				<NavLink to='/#' className={` ${UI.link} ${Styles.link} `}>remove from feed</NavLink>
 			</div>
 		</nav>
 	)

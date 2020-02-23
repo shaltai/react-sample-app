@@ -1,3 +1,5 @@
+/* Links */
+
 .link {
     color: #282810;
     font-size: 1rem;
@@ -8,6 +10,9 @@
     color: #18E0D8;
     transition: color .5s ease-out;
 }
+
+
+/* Headings */
 
 h1 {
     font-size: 4rem;
@@ -27,4 +32,48 @@ h3 {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5rem;
+}
+
+
+/* Inputs */
+
+input {
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: none;
+}
+
+input[type=text] {
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    border-bottom: 0.0625rem solid #282810;
+    background-color: #FCFCFA;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+    border-bottom: 0.0625rem solid #18E0D8;
+    transition: border-bottom .5s ease-out;
+}
+
+input::placeholder {
+    color: #909088;
+}
+
+input[type=submit] {
+    height: 3rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    border: none;
+    color: #FCFCFA;
+    background-color: #282810;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #18E0D8;
+    transition: background-color .5s ease-out;
 }

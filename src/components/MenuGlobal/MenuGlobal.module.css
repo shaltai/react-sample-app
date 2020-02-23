@@ -1,0 +1,41 @@
+.content {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: "profile-link menu-links search-link";
+    justify-content: flex-start;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    background-color: #282810;
+}
+
+.links {
+    display: flex;
+    grid-area: menu-links;
+}
+
+.link {
+    margin-right: 3rem;
+}
+
+.link,
+.link_profile,
+.link_search {
+    line-height: 1rem;
+    color: #FCFCFA;
+    text-decoration: none;
+}
+
+.link_profile {
+    grid-area: profile-link;
+}
+
+.link_search {
+    grid-area: search-link;
+    margin-left: auto;
+}

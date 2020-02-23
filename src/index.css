@@ -8,4 +8,5 @@ body {
     font-family: 'Jost', 'Futura', 'Futura PT', -apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-transform: lowercase;
 }
