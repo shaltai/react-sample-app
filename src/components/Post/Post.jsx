@@ -1,16 +1,13 @@
 import React from 'react';
 import Styles from './Post.module.css';
 import PostPhoto from '../../img/profile/photo__maf-4.jpg';
-import UI from '../UI/UI.module.css';
-import { NavLink } from 'react-router-dom';
+// import UI from '../UI/UI.module.css';
+// import { NavLink } from 'react-router-dom';
 
 function Post(props) {
 	return (
 		<div className={Styles.content}>
-			<div className={` ${Styles.posts__heading} ${Styles.heading} `}>
-				<h2 className={Styles.posts__h2}>posts</h2>
-				<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>search</NavLink>
-			</div>
+
 			<div className={Styles.postItem}>
 				<div className={Styles.postItem__imageContainer}>
 					<img src={PostPhoto} alt='Super Save!' className={Styles.postPhoto} width='672' height='320' />

@@ -54,7 +54,10 @@ function Profile() {
 			{/* Posts */}
 
 			<div className={Styles.posts}>
-				<Post />
+				<div className={` ${Styles.posts__heading} ${Styles.heading} `}>
+					<h2 className={Styles.posts__h2}>posts</h2>
+					<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>search</NavLink>
+				</div>
 				<Post />
 				<Post />
 			</div>
