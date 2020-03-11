@@ -8,15 +8,15 @@ import MenuGlobal from './components/MenuGlobal/MenuGlobal';
 import './App.css';
 import { Route, BrowserRouter } from 'react-router-dom';
 
-function App() {
+function App(props) {
 	return (
 		<BrowserRouter>
 			<div className="App-wrapper">
 				<Header />
 				<Navbar />
-				<Route path='/friendlist' component={Friendlist} />
+				<Route path='/friends' component={Friendlist} />
 				<Route path='/messages' component={Messages} />
-				<Profile />
+				<Route path='/profile' render={() => <Profile posts={props.posts} />} />
 				<MenuGlobal />
 			</div>
 		</BrowserRouter>

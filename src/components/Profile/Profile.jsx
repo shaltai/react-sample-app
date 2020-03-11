@@ -1,13 +1,16 @@
 import React from 'react';
 import Styles from './Profile.module.css';
-import Avatar from '../../img/profile/photo__maf-1.jpg';
-import Photo from '../../img/profile/photo__maf-2.jpg';
+import Avatar from '../../img/profile/photo__maf_1.jpg';
+import Photo from '../../img/profile/photo__maf_2.jpg';
 import Post from '../Post/Post';
 import UI from '../UI/UI.module.css';
 import { NavLink } from 'react-router-dom';
 import ListItem from '../ListItem/ListItem';
 
-function Profile() {
+function Profile(props) {
+
+	let postsElements = props.posts.map(posts => <Post photoId={posts.photoId} title={posts.title} paragraph1={posts.paragraph1} />)
+
 	return (
 		<div className={Styles.content}>
 
@@ -58,8 +61,9 @@ function Profile() {
 					<h2 className={Styles.posts__h2}>posts</h2>
 					<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>search</NavLink>
 				</div>
-				<Post />
-				<Post />
+				{/* <Post filename={'/img/profile/photo__maf-4.jpg'} title='Fleury gets 19-save shutout for Golden Knights against Islanders' alt='Super Save!' paragraph1='Marc-Andre Fleury made 19 saves for his 60th NHL shutout, and the Vegas Golden Knights defeated the New York Islanders 1-0 at T-Mobile Arena on Saturday.' paragraph2='"It gets so frustrating when you allow that many goals," Fleury said about allowing nine goals his previous two starts. "I think there was some bad luck sometimes, but our team played very well defensively tonight."' /> */}
+				{/* <Post /> */}
+				{postsElements}
 			</div>
 
 			{/* Add post */}

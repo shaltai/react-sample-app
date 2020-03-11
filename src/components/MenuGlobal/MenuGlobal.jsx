@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 function MenuGlobal() {
 	return (
 		<nav className={Styles.content}>
-			<NavLink to='/my-profile' className={` ${UI.link} ${Styles.link_profile} `}>my profile</NavLink>
+			<NavLink to='/profile' className={` ${UI.link} ${Styles.link_profile} `}>my profile</NavLink>
 			<div className={Styles.links}>
 				<NavLink to='/feed' className={` ${UI.link} ${Styles.link} `}>feed</NavLink>
 				<NavLink to='/messages' className={` ${UI.link} ${Styles.link} `}>messages</NavLink>
