@@ -1,8 +1,13 @@
 .content {
     grid-area: content;
+    display: grid;
+    grid-template-areas: "section_menu section_content";
+    grid-template-columns: 2fr 10fr;
+}
+
+.profile {
     display: flex;
     flex-wrap: wrap;
-    /* overflow: hidden; */
 }
 
 .heading {
@@ -12,12 +17,12 @@
 }
 
 .gallery_preview {
+    grid-area: section_content;
     display: grid;
     justify-content: space-between;
     align-items: flex-end;
     grid-template-areas: "avatar heading" "avatar photos";
     grid-template-rows: 4.5rem 13rem;
-    grid-template-columns: 3fr 7fr;
     grid-gap: 0rem;
     margin-bottom: 3rem;
 }
@@ -56,6 +61,7 @@
 /* Information */
 
 .info {
+    grid-area: section_content;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -80,8 +86,16 @@
 
 /* Posts */
 
-.posts__heading {
+.posts {
+    grid-area: section_content;
+    display: flex;
+    flex-wrap: wrap;
+    width: 42rem;
     margin-right: 2rem;
+}
+
+.posts__heading {
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -89,11 +103,12 @@
 /* Add post */
 
 .addPost {
+    grid-area: section_content;
     display: flex;
     width: calc(100% - 44rem);
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .addPost__h2 {
@@ -103,6 +118,9 @@
 
 .addPost__inputText {
     width: 100%;
-    max-width: 27rem;
     margin-bottom: 1rem;
+}
+
+.addPost__inputSubmit {
+    align-self: flex-end;
 }

@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import postPhotos from './img/images';
+
 
 let postsData = [{
-        photoId: '../../img/profile/photo__maf_4.jpg',
+        // src: postPhotos[0],
+        alt: 'Maf Photo 1',
         title: 'Fleury gets 31-save shutout for Golden Knights against Islanders',
         paragraph1: 'Marc-Andre Fleury made 19 saves for his 60th NHL shutout, and the Vegas Golden Knights defeated the New York Islanders 1-0 at T-Mobile Arena on Saturday.',
     },
     {
-        photoId: '../../img/profile/photo__maf_2.jpg',
+        // src: '../../img/profile/photo__maf_2.jpg',
+        alt: 'Maf Photo 2',
         title: 'Fleury gets 19-save shutout for Golden Knights against Islanders',
         paragraph1: 'MAF made 19 saves for his 60th NHL shutout, and the Vegas Golden Knights defeated the New York Islanders 1-0 at T-Mobile Arena on Saturday.',
     }

@@ -1,9 +1,9 @@
 import React from 'react';
-import Styles from './Navbar.module.css';
+import Styles from './SectionMenu.module.css';
 import UI from '../UI/UI.module.css';
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+function SectionMenu() {
 	return (
 		<nav className={Styles.content}>
 			<div className={Styles.item}>
@@ -25,4 +25,4 @@ function Navbar() {
 	)
 }
 
-export default Navbar;
+export default SectionMenu;

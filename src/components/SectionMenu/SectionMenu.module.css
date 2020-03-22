@@ -1,5 +1,5 @@
 .content {
-    grid-area: navbar;
+    grid-area: section_menu;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;

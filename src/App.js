@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Messages from './components/Messages/Messages';
 import Friendlist from './components/Friendlist/Friendlist';
@@ -13,7 +12,7 @@ function App(props) {
 		<BrowserRouter>
 			<div className="App-wrapper">
 				<Header />
-				<Navbar />
+
 				<Route path='/friends' component={Friendlist} />
 				<Route path='/messages' component={Messages} />
 				<Route path='/profile' render={() => <Profile posts={props.posts} />} />

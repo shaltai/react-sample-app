@@ -1,17 +1,11 @@
-/* .App {
-  text-align: center;
-} */
-
 .App-wrapper {
     display: grid;
     grid-template-rows: 4rem 1fr;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 12fr;
     grid-gap: 0rem;
-    grid-template-areas: "header header" "navbar content";
+    grid-template-areas: "header" "content";
     /* min-height: 100vh; */
     padding: 0rem 2rem;
-    color: #282810;
-    background-color: #FCFCFA;
 }
 
 
