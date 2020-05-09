@@ -1,6 +1,7 @@
 import React from 'react';
 import Styles from './Profile.module.css';
-import SectionMenu from '../SectionMenu/SectionMenu';
+import MenuSection from '../MenuSection/MenuSection';
+// import MenuSectionItem from '../MenuSectionItem/MenuSectionItem';
 import Avatar from '../../img/profile/photo__maf_1.jpg';
 import Photo from '../../img/profile/photo__maf_2.jpg';
 import Post from '../Post/Post';
@@ -8,18 +9,24 @@ import UI from '../UI/UI.module.css';
 import { NavLink } from 'react-router-dom';
 import ListItem from '../ListItem/ListItem';
 
-function Profile(props) {
+let menuSectionArray = [
+	{ index: 0, menuSectionTitle: 'add to friendlist', menuSectionUrl: '/addfriend' },
+	{ index: 1, menuSectionTitle: 'write message', menuSectionUrl: '/message' },
+	{ index: 2, menuSectionTitle: 'notify about posts', menuSectionUrl: '/notify' },
+	{ index: 3, menuSectionTitle: 'invite to community', menuSectionUrl: '/invite' },
+	{ index: 4, menuSectionTitle: 'remove from feed', menuSectionUrl: '/remove' },
+];
 
-	let postsElements = props.posts.map(posts => <Post title={posts.title} paragraph1={posts.paragraph1} />)
+function Profile(props) {
+	let postsElements = props.postsData.map((postsItems, index) => (
+		<Post key={index} title={postsItems.title} paragraph1={postsItems.paragraph1} />
+	));
 
 	return (
-
-		<div className={Styles.content}>
-
-			<SectionMenu />
+		<div className={UI.content}>
+			<MenuSection menuSectionItems={menuSectionArray} />
 
 			<div className={Styles.profile}>
-
 				{/* Gallery Preview */}
 				<div className={Styles.gallery_preview}>
 					<div className={Styles.avatarContainer}>
@@ -27,7 +34,9 @@ function Profile(props) {
 					</div>
 					<div className={Styles.gallery__heading}>
 						<h2 className={Styles.gallery__h2}>photos</h2>
-						<NavLink to='/profile-gallery' className={` ${Styles.gallery__link} ${UI.link} `}>more photos</NavLink>
+						<NavLink to='/profile-gallery' className={` ${Styles.gallery__link} ${UI.link} `}>
+							more photos
+						</NavLink>
 					</div>
 					<div className={Styles.galleryWrapper}>
 						<div className={Styles.gallery__photos}>
@@ -42,7 +51,9 @@ function Profile(props) {
 				<div className={Styles.info}>
 					<div className={` ${Styles.info__heading} ${Styles.heading} `}>
 						<h1 className={Styles.info__h1}>marc-andre fleury</h1>
-						<NavLink to='/profile-gallery' className={` ${Styles.info__link} ${UI.link} `}>more info</NavLink>
+						<NavLink to='/profile-gallery' className={` ${Styles.info__link} ${UI.link} `}>
+							more info
+						</NavLink>
 					</div>
 					<dl className={Styles.info__list}>
 						<ListItem className={Styles.info__listItem} term='birthday' definition='november 28, 1985' />
@@ -65,7 +76,9 @@ function Profile(props) {
 				<div className={Styles.posts}>
 					<div className={` ${Styles.posts__heading} ${Styles.heading} `}>
 						<h2 className={Styles.posts__h2}>posts</h2>
-						<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>search</NavLink>
+						<NavLink to='/search' className={` ${Styles.posts__link} ${UI.link} `}>
+							search
+						</NavLink>
 					</div>
 					{postsElements}
 				</div>
@@ -73,13 +86,12 @@ function Profile(props) {
 				{/* Add post */}
 				<div className={Styles.addPost}>
 					<h2 className={Styles.addPost__h2}>add post</h2>
-					<input className={Styles.addPost__inputText} type="text" placeholder="write something" />
-					<input className={Styles.addPost__inputSubmit} type="submit" value="post it" />
+					<input className={Styles.addPost__inputText} type='text' placeholder='write something' />
+					<input className={Styles.addPost__inputSubmit} type='submit' value='post it' />
 				</div>
 			</div>
-
 		</div>
-	)
+	);
 }
 
 export default Profile;

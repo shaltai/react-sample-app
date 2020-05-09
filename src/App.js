@@ -10,12 +10,11 @@ import { Route, BrowserRouter } from 'react-router-dom';
 function App(props) {
 	return (
 		<BrowserRouter>
-			<div className="App-wrapper">
+			<div className='App-wrapper'>
 				<Header />
-
 				<Route path='/friends' component={Friendlist} />
 				<Route path='/messages' component={Messages} />
-				<Route path='/profile' render={() => <Profile posts={props.posts} />} />
+				<Route path='/profile' render={() => <Profile postsData={props.postsData} />} />
 				<MenuGlobal />
 			</div>
 		</BrowserRouter>

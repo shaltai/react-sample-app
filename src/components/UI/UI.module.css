@@ -1,3 +1,11 @@
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "section_menu section_content";
+    grid-template-columns: 2fr 10fr;
+}
+
+
 /* Links */
 
 .link {

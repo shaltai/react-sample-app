@@ -1,20 +1,10 @@
 import React from 'react';
 import Styles from './Post.module.css';
 import PostPhoto from '../../img/profile/photo__maf_4.jpg';
-// import UI from '../UI/UI.module.css';
-// import { NavLink } from 'react-router-dom';
-
-// const postPhotos = [
-// 	{ src: '../../img/profile/photo__maf_1.jpg' },
-// 	{ src: '../../img/profile/photo__maf_2.jpg' },
-// 	{ src: '../../img/profile/photo__maf_3.jpg' },
-// 	{ src: '../../img/profile/photo__maf_4.jpg' },
-// ]
 
 function Post(props) {
 	return (
 		<div className={Styles.content}>
-
 			<div className={Styles.postItem}>
 				<div className={Styles.postItem__imageContainer}>
 					<img src={PostPhoto} alt={props.alt} className={Styles.postPhoto} width='672' height='320' />
@@ -23,8 +13,8 @@ function Post(props) {
 				<p className={Styles.postText}>{props.paragraph1}</p>
 				<p className={Styles.postText}>{props.paragraph2}</p>
 			</div>
-		</div >
-	)
+		</div>
+	);
 }
 
 export default Post;
